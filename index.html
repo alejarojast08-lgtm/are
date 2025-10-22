@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografía Art - Alejandra Rojas</title>
-    <link rel="stylesheet" href="/styles/style.css"/>
-
-
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
     <header>
         <div>
-        <h1 class="arte">Biografía Art - Alejandra Rojas</h1>
-        <p>Mi espacio personal donde comparto mi historia, arte y pasiones.</p>
+            <h1 class="arte">Biografía Art - Alejandra Rojas</h1>
+            <p>Mi espacio personal donde comparto mi historia, arte y pasiones.</p>
+        </div>
     </header>
 
     <nav>
@@ -38,14 +38,15 @@
     <section id="galeria" class="galeria">
         <h2>Galería</h2>
         <p>Algunas imágenes que representan mis intereses y proyectos:</p>
-
-        <img src="./assets/images/WhatsApp Image 2025-10-13 at 12.38.33 PM (1).jpeg" alt="Retrato artístico de Alejandra Rojas" width="250">
-        <img src="./assets/images/WhatsApp Image 2025-10-18 at 2.29.33 PM (1).jpeg" alt="Diseño creativo de Alejandra Rojas" width="250">
+        <div class="contenedor-galeria">
+            <img src="assets/images/WhatsApp Image 2025-10-13 at 12.38.33 PM (1).jpeg" alt="Retrato artístico de Alejandra Rojas">
+            <img src="assets/images/WhatsApp Image 2025-10-18 at 2.29.33 PM (1).jpeg" alt="Diseño creativo de Alejandra Rojas">
+        </div>
     </section>
 
     <section id="horario">
         <h2>Horario Semanal</h2>
-        <table border="1">
+        <table border="4">
             <tr>
                 <th>Día</th>
                 <th>Actividad</th>
@@ -57,7 +58,6 @@
             <tr><td>Jueves</td><td>Fotografía</td><td>9:00 am - 11:00 am</td></tr>
             <tr><td>Viernes</td><td>Diseño Editorial</td><td>8:00 am - 10:00 am</td></tr>
         </table>
-        
     </section>
 
     <section id="proyectos">
@@ -70,9 +70,8 @@
                 <p>El diseño fue creado usando herramientas de ilustración digital y edición fotográfica, explorando la interacción entre el arte y la imaginación.</p>
             </div>
             <div class="imagen">
-                <img src="/assets/images/imagen2.jpeg" alt="Cartel La dulzura del espacio" style="width:300px; height:auto; border-radius:10px; object-fit:cover;">
+                <img src="assets/images/imagen2.jpeg" alt="Cartel La dulzura del espacio">
             </div>
-
         </div>
     </section>
 
@@ -93,13 +92,14 @@
     </section>
 
     <footer>
-        
-        <p 📧> Contacto: alejarojast08@gmail.com | 📍 Manizales, Caldas</p>
+        <p>📧 Contacto: <a href="mailto:alejarojast08@gmail.com">alejarojast08@gmail.com</a> | 📍 Manizales, Caldas</p>
         <p>© 2025 Alejandra Rojas - Biografía Art</p>
     </footer>
 
 </body>
 </html>
+
+
 
 
 

@@ -1,20 +1,116 @@
-  .tituloencabezado{ 
-     font: size 30px; 
-     color: #ce59f1;
-}
-header { 
-    display: flex;
-    flex-direction:rows;
-    justify-content: center;
-}
-body{ 
-  background-image: url("/assets/images/fondo-acuarela-elementos-dibujados-mano_52683-57060.jpg");
- 
-  background-size:cover;
-background-repeat:no-repeat ;
+body {
+  background-image: url("../assets/images/fondo-acuarela-elementos-dibujados-mano_52683-57060.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.arte{
-    background-color:rgb(224, 110, 228)
-
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
+
+.arte {
+  background-color: rgb(224, 110, 228);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #d17ae7;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+/* Galería centrada */
+.contenedor-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedor-galeria img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Proyecto */
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyecto {
+  max-width: 700px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Imagen del proyecto sin recorte */
+.imagen img {
+  display: block;
+  width: 100%;
+  max-width: 500px; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  background-color: #fff; 
+  padding: 10px; 
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d17ae7;
+  color: white;
+  font-weight: bold;
+}
+
+
