@@ -17,10 +17,20 @@
     </header>
 
     <nav>
-        <a href="#sobremi">Sobre mí</a>
-        <a href="#galeria">Galería</a>
-        <a href="#horario">Horario</a>
-        <a href="#proyectos">Proyectos</a>
+        <div class="nav-container">
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown()">
+                    Menú ▼
+                </button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#sobremi" onclick="closeDropdown()">Sobre mí</a>
+                    <a href="#galeria" onclick="closeDropdown()">Galería</a>
+                    <a href="#horario" onclick="closeDropdown()">Horario</a>
+                    <a href="#proyectos" onclick="closeDropdown()">Proyectos</a>
+                    <a href="#contacto" onclick="closeDropdown()">Contacto</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <section id="sobremi">
@@ -60,12 +70,12 @@
         </table>
     </section>
 
-        <section id="proyectos">
+    <section id="proyectos">
         <h2>Proyectos Destacados</h2>
         <p>Estos son algunos de los proyectos que reflejan mi proceso creativo y mi pasión por el diseño y la tecnología:</p>
         <div class="proyectos">
             <div class="proyecto">
-                <h3>Proyecto 1: Diseño Conceptual “La Dulzura del Espacio”</h3>
+                <h3>Proyecto 1: Diseño Conceptual "La Dulzura del Espacio"</h3>
                 <p>Inspirado en la relación entre lo cósmico y lo cotidiano, este proyecto combina elementos de fantasía, color y creatividad para transmitir una sensación de ensueño y curiosidad.</p>
                 <p>El diseño fue creado usando herramientas de ilustración digital y edición fotográfica, explorando la interacción entre el arte y la imaginación.</p>
             </div>
@@ -75,7 +85,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contacto">
         <h2>Formulario de Contacto</h2>
         <form>
             <label for="nombre">Nombre:</label><br>
@@ -96,9 +106,30 @@
         <p>© 2025 Alejandra Rojas - Biografía Art</p>
     </footer>
 
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('show');
+        }
+
+        function closeDropdown() {
+            var dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.remove('show');
+        }
+
+        // Cerrar el dropdown si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdown = document.getElementById('dropdownMenu');
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>
-
 
 
 
